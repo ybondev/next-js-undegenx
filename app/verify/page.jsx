@@ -40,7 +40,7 @@ const Verification = () => {
   useEffect(() => {
     setTimeout(() => {
       if (isVerify === true) {
-        window.location.href = "/home";
+        window.location.href = "/next-js-undegenx/home";
       }
     }, 4000);
     return () => clearTimeout();
