@@ -111,7 +111,7 @@ input[type="checkbox"]:checked ~ .navbar ul {
 }
 
 .verify_section .row {
-  height: calc(100dvh - 200px);
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column-reverse;
@@ -137,7 +137,7 @@ input[type="checkbox"]:checked ~ .navbar ul {
 
 .verify_section .right_col .img-fluid {
   width: 100%;
-  max-width: 150px;
+  max-width: 200px;
 }
 
 .verify_section .right_col .btn_container {
@@ -178,6 +178,7 @@ input[type="checkbox"]:checked ~ .navbar ul {
   }
 
   .verify_section .row {
+    height: calc(100dvh - 200px);
     flex-direction: row;
   }
 

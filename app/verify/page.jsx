@@ -74,7 +74,7 @@ const Verification = () => {
               <div className="right_col">
                 <Image
                   src={"./assets/logos_metamask-icon.png"}
-                  width={300}
+                  width={0}
                   height={0}
                   alt=""
                   className="img-fluid"
