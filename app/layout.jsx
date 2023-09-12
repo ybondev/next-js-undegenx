@@ -1,15 +1,18 @@
-"use client"
+"use client";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@styles/globals.css";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 
-export const metadata = {
-  title: "Un-DegenX",
-};
+// export const metadata = {
+//   title: "Un-DegenX",
+// };
 
 const layout = ({ children }) => {
   return (
     <html lang="en">
+      <head>
+        <title>UN-DEGENX</title>
+      </head>
       <body>
         <ThirdwebProvider
           activeChain="goerli"
