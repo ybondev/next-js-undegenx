@@ -1,10 +1,25 @@
-import "bootstrap/dist/css/bootstrap.min.css"
-import "@styles/"
+"use client"
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@styles/globals.css";
+import { ThirdwebProvider } from "@thirdweb-dev/react";
 
-const layout = () => {
+export const metadata = {
+  title: "Un-DegenX",
+};
+
+const layout = ({ children }) => {
   return (
-    <div>layout</div>
-  )
-}
+    <html lang="en">
+      <body>
+        <ThirdwebProvider
+          activeChain="goerli"
+          clientId="e887491a6bf2e42ba4a0436a450b1b93"
+        >
+          {children}
+        </ThirdwebProvider>
+      </body>
+    </html>
+  );
+};
 
-export default layout
+export default layout;
