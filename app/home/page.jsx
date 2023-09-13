@@ -43,7 +43,7 @@ const Home = () => {
             <div className="col-md-6">
               <div className="img_container">
                 <Image
-                  src={"/assets/undraw_all_the_data_re_hh4w.svg"}
+                  src={"./assets/undraw_all_the_data_re_hh4w.svg"}
                   width={660}
                   height={0}
                   alt=""
