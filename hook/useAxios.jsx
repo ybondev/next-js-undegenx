@@ -20,10 +20,9 @@ const useAxios = (param) => {
   };
 
   useEffect(() => {
-    const header = "Access-Control-Allow-Origin: *";
     const interval = setInterval(() => {
       FETCH_DATA(param);
-    }, 1000);
+    }, 10000);
 
     return () => clearInterval(interval);
   });

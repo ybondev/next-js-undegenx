@@ -1,11 +1,7 @@
 import Verification from "./verify/page";
 
 const page = () => {
-  return (
-    <>
-      <Verification />
-    </>
-  );
+  return <>{<Verification />}</>;
 };
 
 export default page;

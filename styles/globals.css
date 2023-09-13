@@ -207,8 +207,10 @@ input[type="checkbox"]:checked ~ .navbar ul {
   text-transform: uppercase;
   border: none;
   width: 100%;
-  max-width: 50%;
+  max-width: 30%;
+  border-radius: 8px;
   padding: 10px;
+  margin-right: 1rem;
 }
 
 .home_section .right_col,
@@ -260,7 +262,7 @@ input[type="checkbox"]:checked ~ .navbar ul {
   margin-left: auto;
 }
 
-.home_section .right_col .link_item {
+.home_section .link_item {
   text-decoration: none;
   color: var(--text-color);
 }

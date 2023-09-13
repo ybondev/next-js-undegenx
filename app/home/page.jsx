@@ -1,9 +1,12 @@
+"use client";
 import Nav from "@components/Nav";
 import Link from "next/link";
 import Image from "next/image";
 import TrendingSearches from "@components/TrendingSearches";
 import MoverShakers from "@components/MoverShakers";
 import Ranking from "@components/Ranking";
+import { ConnectWallet } from "@thirdweb-dev/react";
+import { useRef } from "react";
 
 const Home = () => {
   return (
@@ -17,18 +20,35 @@ const Home = () => {
                 <div className="title">data analytics</div>
                 <div className="text">
                   <p>
-                    -Un-degen your trading
+                    Traders use data analytics to develop trading strategies.
+                    These strategies may involve algorithmic trading, where
+                    automated systems execute trades based on predefined
+                    criteria and data-driven signals.
                     <br />
-                    -use data
                     <br />
-                    -to listen to the community
+                    Data analytics is a powerful tool in the cryptocurrency
+                    industry, as it enables participants to navigate the complex
+                    and rapidly changing landscape while making data-driven
+                    decisions to mitigate risks and maximize returns.
                   </p>
                 </div>
                 <div className="btn_container">
                   <Link href="" className="btn_link">
                     <button>learn more</button>
                   </Link>
+                  <ConnectWallet />
                 </div>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="img_container">
+                <Image
+                  src={"/assets/undraw_all_the_data_re_hh4w.svg"}
+                  width={660}
+                  height={0}
+                  alt=""
+                  className="img-fluid"
+                />
               </div>
             </div>
             <div className="col-md-6">
