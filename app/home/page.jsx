@@ -14,10 +14,13 @@ const Home = () => {
       <Nav />
       <section className="container-fluid home_section">
         <div className="container">
-          <div className="row gy-3 mb-3">
+          <div className="row gy-3">
             <div className="col-md-6">
               <div className="left_col">
-                <div className="title">data analytics</div>
+                <span>data analytics</span>
+                <div className="title">
+                  Un-degen your trading, use data to lisiten to the community
+                </div>
                 <div className="text">
                   <p>
                     Traders use data analytics to develop trading strategies.
@@ -36,7 +39,7 @@ const Home = () => {
                   <Link href="" className="btn_link">
                     <button>learn more</button>
                   </Link>
-                  <ConnectWallet />
+                  <ConnectWallet className="connect_wallet" />
                 </div>
               </div>
             </div>
@@ -51,14 +54,14 @@ const Home = () => {
                 />
               </div>
             </div>
-            <div className="col-md-6">
+            {/* <div className="col-md-6">
               <div className="right_col">
                 <div className="title">trending searches</div>
                 <TrendingSearches />
               </div>
-            </div>
+            </div> */}
           </div>
-          <div className="row gy-3 row_second">
+          {/* <div className="row gy-3 row_second">
             <div className="col-md-6">
               <div className="left_second_col">
                 <div className="title">top 3 mover shakers</div>
@@ -71,7 +74,7 @@ const Home = () => {
                 <Ranking />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
